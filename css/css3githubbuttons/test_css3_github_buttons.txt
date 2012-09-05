@@ -1,10 +1,9 @@
-How to use?
-===========
+Tests - How to use
+==================
 
+You can import ``buttons`` from ``css.css3githubbuttons`` and ``need`` it
+where you want these resources to be included on a page::
 
-You can import ``XXX`` from ``css.css3githubbuttons`` and ``need`` it where you want
-these resources to be included on a page::
-
-  >>> from css.css3githubbuttons import XXX # XXX fix this test
-  >>> XXX.need()
+  >>> from css.css3githubbuttons import buttons
+  >>> buttons.need()
 
