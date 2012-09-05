@@ -10,8 +10,9 @@ There's a lot of versions of this CSS library floating around,
 so we're currently using the one provided by ``necolas`` on GitHub.
 If development moves elsewhere, we can adjust the library accordingly.
 If you're using this and notice a change in development at
-https://github.com/necolas/css3-github-buttons/network before we do,
-let us know.
+https://github.com/necolas/css3-github-buttons/network (such as
+someone has taken over development more than original author or is otherwise
+doing more work) before we do, let us know or send a pull request.
 
 Usage
 =====
