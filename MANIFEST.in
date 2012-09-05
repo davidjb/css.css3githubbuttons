@@ -1,0 +1,3 @@
+include *.txt *.rst *.py *.cfg
+recursive-include css
+exclude *.pyc

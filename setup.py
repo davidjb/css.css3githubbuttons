@@ -41,9 +41,6 @@ setup(
         'fanstatic',
         'setuptools',
         ],
-    setup_requires=[
-        'setuptools-git',
-    ],
     entry_points={
         'fanstatic.libraries': [
             'css3_github_buttons = css.css3githubbuttons:library',
