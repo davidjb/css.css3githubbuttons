@@ -1,3 +1,0 @@
-include *.txt *.rst *.py *.cfg
-recursive-include css *.py *.txt *.css *.png *.md *.html
-exclude *.pyc

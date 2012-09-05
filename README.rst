@@ -38,11 +38,21 @@ of the CSS library, it may (will) need updating at some point.  Do this
 at the base of the repository::
 
     pushd css/css3githubbuttons/resources/css3-github-buttons/
-    git pull
+    wget https://raw.github.com/necolas/css3-github-buttons/master/gh-icons.png
+    wget https://raw.github.com/necolas/css3-github-buttons/master/gh-buttons.css
     popd
     git commit -a -m "Updating to latest version"
     git push
 
+Note
+----
+
+We could use Git submodules but setuptools seems to *hate* them,
+``setuptools-git`` really doesn't want to agree with them,
+``zest.releaser`` doesn't support recursive cloning (yet; pull request
+sent), and so forth. Feel free to help improve this situation! Yikes!
+
+So, let's resort to manually copying the files out of GitHub.
 
 .. _`fanstatic`: http://fanstatic.org
 .. _`CSS3 GitHub Buttons`: https://github.com/necolas/css3-github-buttons
