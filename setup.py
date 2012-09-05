@@ -14,7 +14,7 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 long_description = (
-    read('README.txt')
+    read('README.rst')
     + '\n' +
     read('css', 'css3githubbuttons', 'test_css3_github_buttons.txt')
     + '\n' +
@@ -26,7 +26,7 @@ setup(
     description="Fanstatic packaging of CSS3 GitHub Buttons",
     long_description=long_description,
     classifiers=[],
-    keywords='',
+    keywords='fanstatic css3 buttons github',
     author='Fanstatic Developers',
     author_email='fanstatic@googlegroups.com',
     license='BSD',
