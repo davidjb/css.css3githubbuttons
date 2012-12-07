@@ -5,7 +5,13 @@ Changelog
 2.0 (unreleased)
 ================
 
-- Nothing changed yet.
+- Switched to using CodeFusion's fork of necolas' GitHub buttons.
+  See demo at http://demo.codefusionlab.com/css3-github-buttons/. As well as
+  several fixes, this now provides disabled buttons, no text buttons, colours,
+  more icons, and more sizes. Backwards compatibility should be maintained if
+  you are not using new features (some extra CSS is introduced in the basic
+  file).
+  [davidjb]
 
 
 1.0.2 (2012-09-05)
