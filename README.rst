@@ -6,7 +6,8 @@ Introduction
 
 This library packages `CSS3 GitHub Buttons`_ for `fanstatic`_. Check out
 a `demo`_ of this library - it's really nice. This library provides
-the default buttons and various extensions as per the demo.
+the default buttons and various extensions as per the demo.  As a bonus, this
+library also packages up minified versions of the library's CSS.
 
 There's a *lot* of versions of this CSS library floating around,
 so we're currently using the one provided by ``CodeFusion``, a fork
@@ -65,8 +66,20 @@ Updating this package
 =====================
 
 Given this package uses the latest (at the time of writing) GitHub master
-of the CSS library, it may (will) need updating at some point.  Do this
-at the base of the repository::
+of the CSS library, it may (will) need updating at some point.  
+
+This process requires installation of the package for development - the
+suggested method to do this is via the Buildout within this package::
+
+    cd css.css3githubbuttons
+    python boostrap.py
+    ./bin/buildout
+
+For minification of resources to succeed, you require a Java installation
+as this process uses the YUI Compressor library (via the ``minify``
+and ``yuicompressor`` Python packages).
+
+Do this at the base of the repository::
 
     pushd css/css3githubbuttons/resources
     wget https://github.com/CodeFusion/css3-github-buttons/archive/master.tar.gz
@@ -76,6 +89,10 @@ at the base of the repository::
     git mv css3-github-buttons-master css3-github-buttons
     git add css3-github-buttons
     popd
+    #Minify the CSS
+    python setup.py minify_buttons
+    python setup.py minify_buttons_ext_icons
+    python setup.py minify_buttons_ext_size
     git commit -a -m "Updated to latest version"
     git push
 

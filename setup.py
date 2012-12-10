@@ -43,6 +43,7 @@ setup(
     ],
     setup_requires=[
         'setuptools-git',
+        'minify',
     ],
     entry_points={
         'fanstatic.libraries': [
